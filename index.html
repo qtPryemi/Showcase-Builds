@@ -17,9 +17,9 @@
     --shadow: rgba(26, 18, 8, 0.35);
     --fog: rgba(245, 239, 224, 0.07);
   }
-
+ 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   body {
     background-color: #0e0c08;
     background-image:
@@ -30,7 +30,7 @@
     min-height: 100vh;
     overflow-x: hidden;
   }
-
+ 
   /* === HERO HEADER === */
   .hero {
     position: relative;
@@ -38,7 +38,7 @@
     padding: 70px 40px 50px;
     overflow: hidden;
   }
-
+ 
   .hero::before {
     content: '';
     position: absolute;
@@ -46,7 +46,7 @@
     background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(201,168,76,0.06) 0%, transparent 70%);
     pointer-events: none;
   }
-
+ 
   .hero-kanji {
     font-family: 'Noto Serif JP', serif;
     font-size: clamp(60px, 12vw, 120px);
@@ -59,7 +59,7 @@
     user-select: none;
     white-space: nowrap;
   }
-
+ 
   .hero-title {
     font-family: 'Cinzel Decorative', cursive;
     font-size: clamp(22px, 4vw, 42px);
@@ -71,7 +71,7 @@
     z-index: 1;
     animation: fadeDown 1s ease both;
   }
-
+ 
   .hero-sub {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
@@ -83,7 +83,7 @@
     z-index: 1;
     animation: fadeDown 1s 0.2s ease both;
   }
-
+ 
   .hero-divider {
     display: flex;
     align-items: center;
@@ -101,12 +101,12 @@
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
   }
-
+ 
   @keyframes fadeDown {
     from { opacity: 0; transform: translateY(-12px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-
+ 
   /* === MAIN TABLE WRAPPER === */
   .showcase-wrap {
     max-width: 1300px;
@@ -114,12 +114,12 @@
     padding: 0 24px;
     animation: fadeUp 1s 0.4s ease both;
   }
-
+ 
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-
+ 
   /* === TABLE === */
   .showcase-table {
     width: 100%;
@@ -130,12 +130,12 @@
     overflow: hidden;
     box-shadow: 0 8px 60px rgba(0,0,0,0.7), inset 0 0 0 1px rgba(201,168,76,0.06);
   }
-
+ 
   /* Column widths */
   .col-build  { width: 160px; }
   .col-type   { width: 110px; }
   .col-images { /* flex */ }
-
+ 
   /* === HEADER ROW === */
   .showcase-table thead tr th {
     background: linear-gradient(180deg, #2a1f0d 0%, #1a1208 100%);
@@ -149,15 +149,15 @@
     border-bottom: 2px solid rgba(201,168,76,0.35);
     text-align: left;
   }
-
+ 
   .showcase-table thead tr th:first-child {
     border-right: 1px solid rgba(201,168,76,0.18);
   }
-
+ 
   .th-screenshots {
     text-align: center !important;
   }
-
+ 
   /* Sub-header for Interior / Exterior */
   .sub-header-row th {
     background: #16110a;
@@ -170,26 +170,26 @@
     border-bottom: 1px solid rgba(201,168,76,0.12);
     text-align: left;
   }
-
+ 
   .sub-header-row .sh-build,
   .sub-header-row .sh-spacer {
     border-right: 1px solid rgba(201,168,76,0.12);
   }
-
+ 
   .sub-header-row .sh-interior { border-right: 1px dashed rgba(201,168,76,0.15); }
-
+ 
   /* === DATA ROWS === */
   .showcase-table tbody tr {
     transition: background 0.3s;
   }
-
+ 
   .showcase-table tbody tr:hover {
     background: rgba(201,168,76,0.025);
   }
-
+ 
   .row-dojo { border-bottom: 1px solid rgba(201,168,76,0.1); }
   .row-samurai { /* last row */ }
-
+ 
   /* BUILD LABEL CELL */
   .cell-build {
     padding: 24px 20px;
@@ -198,7 +198,7 @@
     background: linear-gradient(135deg, rgba(26,18,8,0.95) 0%, rgba(15,11,5,0.98) 100%);
     min-width: 150px;
   }
-
+ 
   .build-badge {
     display: flex;
     flex-direction: column;
@@ -206,12 +206,12 @@
     gap: 8px;
     text-align: center;
   }
-
+ 
   .build-icon {
     font-size: 28px;
     filter: drop-shadow(0 2px 8px rgba(201,168,76,0.5));
   }
-
+ 
   .build-name {
     font-family: 'Cinzel Decorative', cursive;
     font-size: 10px;
@@ -220,14 +220,14 @@
     color: var(--gold);
     text-transform: uppercase;
   }
-
+ 
   .build-num {
     font-family: 'Noto Serif JP', serif;
     font-size: 11px;
     color: rgba(201,168,76,0.35);
     letter-spacing: 0.1em;
   }
-
+ 
   /* INTERIOR / EXTERIOR SPLIT CELLS */
   .cell-interior {
     padding: 20px 16px;
@@ -235,13 +235,13 @@
     border-right: 1px dashed rgba(201,168,76,0.15);
     width: 50%;
   }
-
+ 
   .cell-exterior {
     padding: 20px 16px;
     vertical-align: top;
     width: 50%;
   }
-
+ 
   /* TYPE LABEL (Interior / Exterior small badge) */
   .type-label {
     display: inline-block;
@@ -255,14 +255,14 @@
     border-radius: 2px;
     margin-bottom: 14px;
   }
-
+ 
   /* === IMAGE GRID === */
   .img-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
     gap: 8px;
   }
-
+ 
   .img-frame {
     position: relative;
     aspect-ratio: 4/3;
@@ -273,14 +273,14 @@
     background: #0d0a05;
     transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
   }
-
+ 
   .img-frame:hover {
     border-color: rgba(201,168,76,0.55);
     transform: scale(1.04);
     box-shadow: 0 6px 24px rgba(0,0,0,0.7), 0 0 0 1px rgba(201,168,76,0.3);
     z-index: 5;
   }
-
+ 
   .img-frame img {
     width: 100%;
     height: 100%;
@@ -289,12 +289,12 @@
     transition: opacity 0.4s, filter 0.4s;
     filter: sepia(20%) contrast(1.05);
   }
-
+ 
   .img-frame:hover img {
     filter: sepia(0%) contrast(1.1) brightness(1.05);
     opacity: 1;
   }
-
+ 
   /* placeholder shimmer when image missing */
   .img-frame .placeholder {
     width: 100%;
@@ -308,7 +308,7 @@
     flex-direction: column;
     gap: 4px;
   }
-
+ 
   .placeholder-icon { font-size: 18px; opacity: 0.25; }
   .placeholder-name {
     font-family: 'Noto Serif JP', serif;
@@ -318,18 +318,18 @@
     text-align: center;
     padding: 0 4px;
   }
-
+ 
   @keyframes shimmer {
     0%   { background-position: 0% 50%; }
     50%  { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
   }
-
+ 
   /* Corner accents on cells */
   .cell-interior, .cell-exterior {
     position: relative;
   }
-
+ 
   /* === LIGHTBOX === */
   .lightbox {
     display: none;
@@ -344,10 +344,10 @@
     backdrop-filter: blur(8px);
     cursor: zoom-out;
   }
-
+ 
   .lightbox.active { display: flex; animation: fadeIn 0.25s ease; }
   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
+ 
   .lightbox img {
     max-width: 88vw;
     max-height: 78vh;
@@ -356,7 +356,7 @@
     box-shadow: 0 20px 80px rgba(0,0,0,0.9), 0 0 0 1px rgba(201,168,76,0.1);
     border-radius: 3px;
   }
-
+ 
   .lightbox-caption {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
@@ -364,7 +364,7 @@
     font-size: 14px;
     letter-spacing: 0.15em;
   }
-
+ 
   .lightbox-close {
     position: absolute;
     top: 24px;
@@ -376,13 +376,13 @@
     font-family: 'Cinzel Decorative', cursive;
   }
   .lightbox-close:hover { color: var(--gold); }
-
+ 
   .lightbox-nav {
     display: flex;
     gap: 24px;
     align-items: center;
   }
-
+ 
   .nav-btn {
     font-family: 'Cinzel Decorative', cursive;
     font-size: 11px;
@@ -400,14 +400,14 @@
     border-color: var(--gold);
     background: rgba(201,168,76,0.07);
   }
-
+ 
   /* Horizontal divider in screenshots column */
   .screenshots-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
   }
-
+ 
   /* Red accent line — samurai theme */
   .accent-dot {
     display: inline-block;
@@ -419,7 +419,39 @@
     vertical-align: middle;
     box-shadow: 0 0 6px var(--red);
   }
-
+ 
+  /* PMC Link Button */
+  .pmc-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    padding: 5px 12px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 7px;
+    letter-spacing: 0.18em;
+    color: rgba(201,168,76,0.7);
+    border: 1px solid rgba(201,168,76,0.25);
+    border-radius: 2px;
+    text-decoration: none;
+    background: rgba(201,168,76,0.04);
+    transition: all 0.25s ease;
+    white-space: nowrap;
+  }
+  .pmc-link:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+    background: rgba(201,168,76,0.1);
+    box-shadow: 0 0 12px rgba(201,168,76,0.15);
+    transform: translateY(-1px);
+  }
+  .pmc-link svg {
+    width: 9px;
+    height: 9px;
+    fill: currentColor;
+    flex-shrink: 0;
+  }
+ 
   /* Footer */
   footer {
     text-align: center;
@@ -429,7 +461,7 @@
     letter-spacing: 0.3em;
     color: rgba(201,168,76,0.2);
   }
-
+ 
   footer .kanji-footer {
     font-family: 'Noto Serif JP', serif;
     font-size: 22px;
@@ -437,7 +469,7 @@
     display: block;
     margin-bottom: 8px;
   }
-
+ 
   @media (max-width: 768px) {
     .img-grid { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); }
     .cell-build { min-width: 110px; }
@@ -446,7 +478,7 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- HERO -->
 <div class="hero">
   <div class="hero-kanji">道場　侍</div>
@@ -454,7 +486,7 @@
   <p class="hero-sub">Architecture &nbsp;·&nbsp; Interior &nbsp;·&nbsp; Exterior</p>
   <div class="hero-divider"><span>⛩</span></div>
 </div>
-
+ 
 <!-- TABLE -->
 <div class="showcase-wrap">
   <table class="showcase-table" role="table">
@@ -470,7 +502,7 @@
       </tr>
     </thead>
     <tbody>
-
+ 
       <!-- ===================== ROW 1: DOJO ===================== -->
       <tr class="row-dojo">
         <td class="cell-build">
@@ -478,22 +510,26 @@
             <span class="build-icon">🥋</span>
             <span class="build-name">Dojo</span>
             <span class="build-num">壱</span>
+            <a class="pmc-link" href="https://www.planetminecraft.com/project/samurai-temple/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+              PMC Page
+            </a>
           </div>
         </td>
-
+ 
         <!-- Dojo Interior -->
         <td class="cell-interior">
           <span class="type-label">Interior</span>
           <div class="img-grid" id="dojo-interior"></div>
         </td>
-
+ 
         <!-- Dojo Exterior -->
         <td class="cell-exterior">
           <span class="type-label">Exterior</span>
           <div class="img-grid" id="dojo-exterior"></div>
         </td>
       </tr>
-
+ 
       <!-- ===================== ROW 2: SAMURAI TEMPLE ===================== -->
       <tr class="row-samurai">
         <td class="cell-build">
@@ -501,32 +537,36 @@
             <span class="build-icon">⛩️</span>
             <span class="build-name">Samurai<br>Temple</span>
             <span class="build-num">弐</span>
+            <a class="pmc-link" href="https://www.planetminecraft.com/project/samurai-temple/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+              PMC Page
+            </a>
           </div>
         </td>
-
+ 
         <!-- Samurai Interior -->
         <td class="cell-interior">
           <span class="type-label">Interior</span>
           <div class="img-grid" id="sam-interior"></div>
         </td>
-
+ 
         <!-- Samurai Exterior -->
         <td class="cell-exterior">
           <span class="type-label">Exterior</span>
           <div class="img-grid" id="sam-exterior"></div>
         </td>
       </tr>
-
+ 
     </tbody>
   </table>
 </div>
-
+ 
 <!-- FOOTER -->
 <footer>
   <span class="kanji-footer">道</span>
   The Way of the Builder
 </footer>
-
+ 
 <!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
   <div class="lightbox-close" onclick="closeLightboxDirect()">✕</div>
@@ -537,7 +577,7 @@
     <button class="nav-btn" onclick="lbNav(1); event.stopPropagation()">Next ▸</button>
   </div>
 </div>
-
+ 
 <script>
   // ─── IMAGE SETS ───────────────────────────────────────────────
   const sets = {
@@ -555,14 +595,14 @@
       'samex7','samex8','samex9','samex10'
     ]
   };
-
+ 
   // Extensions to try in order
   const exts = ['jpg','jpeg','png','webp','JPG','JPEG','PNG'];
-
+ 
   // Lightbox state
   let lbImages = [];
   let lbIndex  = 0;
-
+ 
   // ─── BUILD GRIDS ────────────────────────────────────────────
   Object.entries(sets).forEach(([gridId, names]) => {
     const grid = document.getElementById(gridId);
@@ -572,11 +612,11 @@
       frame.dataset.name = name;
       frame.dataset.gridId = gridId;
       frame.dataset.idx = idx;
-
+ 
       // Try loading with first extension; fallback to placeholder
       const img = document.createElement('img');
       img.alt = name;
-
+ 
       let tried = 0;
       function tryNext() {
         if (tried < exts.length) {
@@ -590,18 +630,18 @@
           frame.appendChild(ph);
         }
       }
-
+ 
       img.onerror = tryNext;
       img.onload  = () => { /* loaded ok */ };
       tryNext();
-
+ 
       frame.appendChild(img);
-
+ 
       frame.addEventListener('click', () => openLightbox(gridId, idx));
       grid.appendChild(frame);
     });
   });
-
+ 
   // ─── LIGHTBOX ───────────────────────────────────────────────
   function openLightbox(gridId, startIdx) {
     lbImages = sets[gridId];
@@ -609,7 +649,7 @@
     renderLb();
     document.getElementById('lightbox').classList.add('active');
   }
-
+ 
   function renderLb() {
     const name = lbImages[lbIndex];
     const lbImg = document.getElementById('lb-img');
@@ -619,16 +659,16 @@
     document.getElementById('lb-caption').textContent =
       `${name}  ·  ${lbIndex + 1} / ${lbImages.length}`;
   }
-
+ 
   function lbNav(dir) {
     lbIndex = (lbIndex + dir + lbImages.length) % lbImages.length;
     renderLb();
   }
-
+ 
   function closeLightboxDirect() {
     document.getElementById('lightbox').classList.remove('active');
   }
-
+ 
   function closeLightbox(e) {
     if (e.target === document.getElementById('lightbox') ||
         e.target === document.getElementById('lb-img') === false) {
@@ -636,7 +676,7 @@
       if (e.target.id === 'lightbox') closeLightboxDirect();
     }
   }
-
+ 
   // Keyboard nav
   document.addEventListener('keydown', e => {
     const lb = document.getElementById('lightbox');
